@@ -80,6 +80,7 @@ protected:
   packml_msgs::Status status_msg_;                      /** Message containing Packml status */
   double stats_publish_rate_;                           /** Rate at which rolling Packml stats are calculated and published */
   double incremental_stats_publish_rate_;               /** Rate at which incremental Packml stats are calculated and published */
+  double ideal_cycle_time_;				/** Ideal time for a cycle used to calculate performance and OEE*/
   ros::Timer stats_timer_;                              /** Timer used to publish Packml stats */
   ros::Timer incremental_stats_timer_;                  /** Timer used to publish incremental Packml stats */
 
